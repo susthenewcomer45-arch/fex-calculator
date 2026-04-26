@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import QuotePlaceholder from "@/components/QuotePlaceholder";
 import AdsensePlaceholder from "@/components/AdsensePlaceholder";
+import LeadForm from "@/components/LeadForm";
 import { states } from "@/lib/states";
 import { generateFAQSchema, generateWebPageSchema } from "@/lib/schema";
 
@@ -83,6 +84,8 @@ export default function HomePage() {
       {/* QUOTE_TOOL_START - Insert the main quote calculator component here */}
       <QuotePlaceholder />
       {/* QUOTE_TOOL_END */}
+
+      <LeadForm />
 
       {/* ADSENSE_UNIT_2_START - Insert Google AdSense unit here (e.g. 300x250 rectangle) */}
       <AdsensePlaceholder label="Rectangle Ad — Mid Page" />

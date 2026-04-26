@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import QuotePlaceholder from "@/components/QuotePlaceholder";
 import AdsensePlaceholder from "@/components/AdsensePlaceholder";
+import LeadForm from "@/components/LeadForm";
 import { states } from "@/lib/states";
 import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
@@ -120,6 +121,8 @@ export default async function StatePage({ params }: Props) {
       {/* QUOTE_TOOL_START - Insert quote calculator scoped to this state here */}
       <QuotePlaceholder state={state.name} />
       {/* QUOTE_TOOL_END */}
+
+      <LeadForm defaultState={state.name} />
 
       <section className="mt-10">
         <h2 className="text-2xl font-bold text-blue-900 mb-4">

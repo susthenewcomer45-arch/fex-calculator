@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { generateLocalBusinessSchema } from "@/lib/schema";
 
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
+  verification: { google: "MAVHjJSFKyedq_BN9w9hPGAONxLRSB_PxT16Lq-R-SM" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -45,6 +47,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
           </div>
         </header>
+
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4437016471828719"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
 
         <main className="max-w-5xl mx-auto px-4 py-8">{children}</main>
 
