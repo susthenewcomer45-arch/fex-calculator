@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import QuotePlaceholder from "@/components/QuotePlaceholder";
+import Calculator from "@/components/Calculator";
 import AdsensePlaceholder from "@/components/AdsensePlaceholder";
-import LeadForm from "@/components/LeadForm";
+import { AccordionItem } from "@/components/Accordion";
 import { states } from "@/lib/states";
 import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
@@ -72,115 +72,95 @@ export default async function StatePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <nav className="text-sm text-gray-500 mb-6">
-        <Link href="/" className="hover:text-blue-700">Home</Link>
-        <span className="mx-2">›</span>
-        <span className="text-gray-800 font-medium">{state.name}</span>
-      </nav>
+      {/* Navy hero */}
+      <section className="bg-[#1a2744] py-14 px-4">
+        <div className="max-w-5xl mx-auto text-center">
+          <nav className="text-sm text-white/50 mb-6 text-left">
+            <Link href="/" className="hover:text-[#14b8a6] transition-colors">Home</Link>
+            <span className="mx-2">›</span>
+            <span className="text-white/80">{state.name}</span>
+          </nav>
 
-      {/* ADSENSE_UNIT_START - Insert AdSense unit here (top of state page) */}
-      <AdsensePlaceholder label={`State Page Ad — ${state.name} — Top`} />
-      {/* ADSENSE_UNIT_END */}
-
-      <section className="mb-8">
-        <h1 className="text-4xl font-extrabold text-blue-900 leading-tight mb-4">
-          Final Expense Insurance Quotes in {state.name} —{" "}
-          <span className="text-green-600">No Phone Calls</span>
-        </h1>
-
-        <p className="text-gray-700 leading-relaxed">
-          Final expense insurance in {state.name} provides residents with an affordable, permanent
-          life insurance solution designed specifically for end-of-life costs. Whether you are
-          looking to cover funeral and burial expenses, outstanding medical bills, or simply want to
-          ensure your family is not left with unexpected debt, a final expense policy can offer
-          peace of mind without the complexity or cost of traditional life insurance.
-        </p>
-
-        <p className="text-gray-700 leading-relaxed mt-3">
-          The average cost of a funeral in {state.name} is{" "}
-          <strong>${state.averageFuneralCost.toLocaleString()}</strong>. Without coverage, this
-          burden falls entirely on your family — often at one of the most emotionally difficult
-          times in their lives. A modest final expense policy can eliminate that financial stress
-          completely, allowing your loved ones to focus on honoring your memory rather than
-          worrying about how to pay for it.
-        </p>
-
-        <p className="text-gray-700 leading-relaxed mt-3">
-          In {state.name}, final expense policies typically require no medical exam and accept
-          applicants between ages 50 and 85. Coverage is available even for residents with
-          pre-existing conditions such as diabetes, high blood pressure, or COPD. Premiums are
-          fixed for life and the policy builds cash value over time, making it one of the most
-          stable financial tools available to {state.name} seniors on a fixed income.
-        </p>
-
-        <p className="text-gray-700 leading-relaxed mt-3 italic border-l-4 border-blue-200 pl-4">
-          {state.stateFact}
-        </p>
-      </section>
-
-      {/* QUOTE_TOOL_START - Insert quote calculator scoped to this state here */}
-      <QuotePlaceholder state={state.name} />
-      {/* QUOTE_TOOL_END */}
-
-      <LeadForm defaultState={state.name} />
-
-      <section className="mt-10">
-        <h2 className="text-2xl font-bold text-blue-900 mb-4">
-          How to Get a Free Quote in {state.name}
-        </h2>
-        <ul className="space-y-3 text-gray-700">
-          <li className="flex gap-3">
-            <span className="text-blue-700 font-bold text-lg">1.</span>
-            <span>
-              <strong>Use the calculator above</strong> — Enter your age, gender, and health
-              status. Your state ({state.name}) is already selected automatically.
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-blue-700 font-bold text-lg">2.</span>
-            <span>
-              <strong>Choose your coverage amount</strong> — Select a benefit between $5,000 and
-              $35,000 to cover estimated funeral and burial costs in {state.name}.
-            </span>
-          </li>
-          <li className="flex gap-3">
-            <span className="text-blue-700 font-bold text-lg">3.</span>
-            <span>
-              <strong>Get your instant estimate</strong> — See your estimated monthly premium
-              immediately. No phone number required, no agents will call you.
-            </span>
-          </li>
-        </ul>
-      </section>
-
-      {/* ADSENSE_UNIT_START - Insert AdSense unit here (bottom of state page) */}
-      <AdsensePlaceholder label={`State Page Ad — ${state.name} — Bottom`} />
-      {/* ADSENSE_UNIT_END */}
-
-      <section className="mt-10">
-        <h2 className="text-2xl font-bold text-blue-900 mb-5">
-          Frequently Asked Questions About Final Expense Insurance in {state.name}
-        </h2>
-        <div className="space-y-5">
-          {faqs.map((faq) => (
-            <div
-              key={faq.question}
-              className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm"
-            >
-              <h3 className="font-bold text-blue-900 mb-2">{faq.question}</h3>
-              <p className="text-gray-700 text-sm leading-relaxed">{faq.answer}</p>
-            </div>
-          ))}
+          <h1 className="font-bold text-white leading-tight mb-4" style={{ fontSize: '2.5rem' }}>
+            Final Expense Insurance
+            <br />
+            <span className="text-[#14b8a6]">in {state.name}</span>
+          </h1>
+          <p className="text-white/70 max-w-md mx-auto mb-6 leading-relaxed text-sm">
+            Localized premium estimates for {state.name} residents. Rates based on{" "}
+            {state.name} market data — updated for 2026.
+          </p>
+          <span className="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1 text-white text-sm">
+            🏷️ Avg. Funeral: ${state.averageFuneralCost.toLocaleString()}
+          </span>
         </div>
       </section>
 
-      <div className="mt-10 flex gap-4 text-sm">
-        <Link href="/" className="text-blue-700 hover:underline font-medium">
-          ← Back to All States
-        </Link>
-        <Link href="/blog" className="text-blue-700 hover:underline font-medium">
-          Read Our Blog →
-        </Link>
+      {/* Main content */}
+      <div className="max-w-5xl mx-auto px-4">
+        {/* ADSENSE_UNIT_1_START */}
+        <AdsensePlaceholder label={`State Page Ad — ${state.name} — Top`} />
+        {/* ADSENSE_UNIT_1_END */}
+
+        {/* Calculator (client component — includes GHL modal) */}
+        <Calculator stateName={state.name} />
+
+        {/* SEO body content */}
+        <section className="max-w-lg mx-auto mt-8 space-y-4">
+          <div className="bg-white rounded-2xl shadow-sm p-6">
+            <p className="text-[#1e293b] leading-relaxed text-sm">
+              Final expense insurance in {state.name} provides residents with an affordable,
+              permanent life insurance solution designed specifically for end-of-life costs. Whether
+              you are looking to cover funeral and burial expenses, outstanding medical bills, or
+              simply want to ensure your family is not left with unexpected debt, a final expense
+              policy can offer peace of mind without the complexity or cost of traditional life
+              insurance.
+            </p>
+            <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
+              The average cost of a funeral in {state.name} is{" "}
+              <strong>${state.averageFuneralCost.toLocaleString()}</strong>. Without coverage, this
+              burden falls entirely on your family — often at one of the most emotionally difficult
+              times in their lives. A modest final expense policy can eliminate that financial stress
+              completely.
+            </p>
+            <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
+              In {state.name}, final expense policies typically require no medical exam and accept
+              applicants between ages 50 and 85. Coverage is available even for residents with
+              pre-existing conditions such as diabetes, high blood pressure, or COPD. Premiums are
+              fixed for life and the policy builds cash value over time.
+            </p>
+            <p className="text-[#1e293b] leading-relaxed text-sm mt-3 italic border-l-4 border-teal-200 pl-4">
+              {state.stateFact}
+            </p>
+          </div>
+        </section>
+
+        {/* ADSENSE_UNIT_2_START */}
+        <AdsensePlaceholder label={`State Page Ad — ${state.name} — Bottom`} />
+        {/* ADSENSE_UNIT_2_END */}
+
+        {/* FAQs */}
+        <section className="max-w-lg mx-auto mt-4 pb-12">
+          <h2 className="text-xl font-bold text-[#1a2744] mb-4">
+            Frequently Asked Questions — {state.name}
+          </h2>
+          <div className="space-y-3">
+            {faqs.map((faq) => (
+              <AccordionItem key={faq.question} title={faq.question}>
+                <p>{faq.answer}</p>
+              </AccordionItem>
+            ))}
+          </div>
+        </section>
+
+        <div className="max-w-lg mx-auto pb-12 flex gap-4 text-sm">
+          <Link href="/" className="text-[#0d9488] hover:underline font-medium">
+            ← Back to All States
+          </Link>
+          <Link href="/blog" className="text-[#0d9488] hover:underline font-medium">
+            Read Our Blog →
+          </Link>
+        </div>
       </div>
     </>
   );

@@ -10,14 +10,19 @@ export default function AdsensePlaceholder({ label }: AdsensePlaceholderProps) {
   useEffect(() => {
     try {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const adsbygoogle = (window as any).adsbygoogle || []
-      adsbygoogle.push({})
+      ;(window as any).adsbygoogle = (window as any).adsbygoogle || []
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ;(window as any).adsbygoogle.push({})
     } catch {}
   }, [])
 
+  // ADSENSE_PLACEHOLDER - Replace inner <ins> with actual AdSense unit when approved
   return (
-    <div className="w-full my-6" style={{ minHeight: 100, background: '#f5f5f5' }} aria-label={label ?? 'Advertisement'}>
-      {/* ADSENSE_UNIT — Google AdSense ins tag rendered below */}
+    <div
+      className="w-full my-6 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl flex items-center justify-center"
+      style={{ minHeight: 120 }}
+      aria-label={label ?? 'Advertisement'}
+    >
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}

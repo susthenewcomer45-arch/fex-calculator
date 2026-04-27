@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
 import { generateLocalBusinessSchema } from "@/lib/schema";
 
 const geist = Geist({ subsets: ["latin"] });
@@ -35,18 +36,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>
-      <body className={`${geist.className} bg-gray-50 text-gray-900 antialiased`}>
-        <header className="bg-blue-900 text-white py-4 px-6 shadow-md">
-          <div className="max-w-5xl mx-auto flex items-center justify-between">
-            <a href="/" className="text-xl font-bold tracking-tight text-white">
-              nocallquotenow.com
-            </a>
-            <nav className="hidden sm:flex gap-6 text-sm font-medium text-blue-200">
-              <a href="/" className="hover:text-white transition-colors">Home</a>
-              <a href="/blog" className="hover:text-white transition-colors">Blog</a>
-            </nav>
-          </div>
-        </header>
+      <body className={`${geist.className} antialiased`} style={{ background: "#f1f5f9", color: "#1e293b" }}>
+        <NavBar />
 
         <Script
           async
@@ -55,10 +46,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           strategy="afterInteractive"
         />
 
-        <main className="max-w-5xl mx-auto px-4 py-8">{children}</main>
+        <main>{children}</main>
 
-        <footer className="bg-blue-950 text-blue-300 text-xs text-center py-6 px-4 mt-16">
-          <p className="max-w-3xl mx-auto">
+        <footer className="bg-teal-600 text-white text-xs text-center py-6 px-4 mt-16">
+          <p className="max-w-3xl mx-auto opacity-90">
             NocallQuoteNow.com provides illustrative final expense insurance estimates for educational purposes only.
             Quotes are not binding and actual premiums vary by carrier, age, health, and state regulations.
             Always review policy details before purchasing. © {new Date().getFullYear()} NocallQuoteNow.
