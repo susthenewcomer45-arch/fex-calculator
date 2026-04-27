@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import StateGrid from './StateGrid'
+import AdsensePlaceholder from './AdsensePlaceholder'
 import type { State } from '@/lib/states'
 
 interface HomeHeroProps {
@@ -67,6 +68,12 @@ export default function HomeHero({ states }: HomeHeroProps) {
           </div>
         </div>
       </section>
+
+      {/* ADSENSE_UNIT_1_START - Above state grid */}
+      <div className="max-w-5xl mx-auto px-4">
+        <AdsensePlaceholder label="Homepage Ad — Above State Grid" />
+      </div>
+      {/* ADSENSE_UNIT_1_END */}
 
       {/* State grid section */}
       <section className="bg-[#f1f5f9] py-12 px-4">

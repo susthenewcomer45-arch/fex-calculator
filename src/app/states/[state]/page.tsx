@@ -98,15 +98,17 @@ export default async function StatePage({ params }: Props) {
 
       {/* Main content */}
       <div className="max-w-5xl mx-auto px-4">
-        {/* ADSENSE_UNIT_1_START */}
-        <AdsensePlaceholder label={`State Page Ad — ${state.name} — Top`} />
-        {/* ADSENSE_UNIT_1_END */}
-
         {/* Calculator (client component — includes GHL modal) */}
         <Calculator stateName={state.name} />
 
+        {/* ADSENSE_UNIT_1_START - Between calculator and body content */}
+        <div className="max-w-lg mx-auto">
+          <AdsensePlaceholder label={`State Page Ad — ${state.name}`} />
+        </div>
+        {/* ADSENSE_UNIT_1_END */}
+
         {/* SEO body content */}
-        <section className="max-w-lg mx-auto mt-8 space-y-4">
+        <section className="max-w-lg mx-auto mt-4 space-y-4">
           <div className="bg-white rounded-2xl shadow-sm p-6">
             <p className="text-[#1e293b] leading-relaxed text-sm">
               Final expense insurance in {state.name} provides residents with an affordable,
@@ -117,27 +119,30 @@ export default async function StatePage({ params }: Props) {
               insurance.
             </p>
             <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
-              The average cost of a funeral in {state.name} is{" "}
-              <strong>${state.averageFuneralCost.toLocaleString()}</strong>. Without coverage, this
-              burden falls entirely on your family — often at one of the most emotionally difficult
-              times in their lives. A modest final expense policy can eliminate that financial stress
-              completely.
+              The estimate you see in the calculator above is built on real {state.name} market data
+              — not a generic national average. With an average funeral in {state.name} running{" "}
+              <strong>${state.averageFuneralCost.toLocaleString()}</strong>, the premiums shown
+              reflect actual rate trends for {state.name} residents based on age, gender, and health
+              profile. Think of it as a data-backed starting point. If the number looks right for
+              your budget, the green <strong>Get the Approved Rate</strong> button connects you with
+              a licensed {state.name} insurance expert who can confirm your exact, carrier-approved
+              monthly premium — no commitment, no pressure.
             </p>
             <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
-              In {state.name}, final expense policies typically require no medical exam and accept
-              applicants between ages 50 and 85. Coverage is available even for residents with
-              pre-existing conditions such as diabetes, high blood pressure, or COPD. Premiums are
-              fixed for life and the policy builds cash value over time.
+              One thing worth understanding: final expense insurance is priced by age at the time
+              you apply. The older you are when you lock in a policy, the higher your monthly
+              premium — and that rate is then fixed for life. With funeral costs in {state.name}{" "}
+              rising steadily with inflation, applying sooner rather than later typically locks in a
+              meaningfully lower rate over the long term. The good news is that{" "}
+              {state.name} policies require no medical exam and accept applicants aged 50–85,
+              including those with pre-existing conditions like diabetes, COPD, or heart disease —
+              so there is no health-related reason to wait.
             </p>
             <p className="text-[#1e293b] leading-relaxed text-sm mt-3 italic border-l-4 border-teal-200 pl-4">
               {state.stateFact}
             </p>
           </div>
         </section>
-
-        {/* ADSENSE_UNIT_2_START */}
-        <AdsensePlaceholder label={`State Page Ad — ${state.name} — Bottom`} />
-        {/* ADSENSE_UNIT_2_END */}
 
         {/* FAQs */}
         <section className="max-w-lg mx-auto mt-4 pb-12">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HomeHero from "@/components/HomeHero";
+import AdsensePlaceholder from "@/components/AdsensePlaceholder";
 import { AccordionItem } from "@/components/Accordion";
 import { states } from "@/lib/states";
 import { generateFAQSchema, generateWebPageSchema } from "@/lib/schema";
@@ -42,6 +43,16 @@ const faqs = [
     question: "What is the difference between final expense and whole life insurance?",
     answer:
       "Final expense insurance is a form of whole life insurance but with smaller face amounts (typically $2,000–$35,000) and simplified underwriting. Both build cash value over time and provide permanent coverage with fixed premiums. Traditional whole life policies offer larger death benefits (often $100,000+) and require a full medical exam. Final expense policies prioritize ease of qualification and affordability for seniors on fixed incomes.",
+  },
+  {
+    question: "Why does waiting cost me more?",
+    answer:
+      "Final expense insurance premiums are calculated primarily based on your age at the time you apply. Insurers use actuarial tables that assign higher risk — and therefore higher monthly premiums — to older applicants. A policy you lock in at 65 will cost meaningfully less per month than the same coverage applied for at 70 or 75, and that lower rate stays fixed for life regardless of how your health changes. Because funeral costs also increase with inflation year over year, waiting means you may need more coverage at a higher premium — a compounding cost that grows the longer the decision is deferred.",
+  },
+  {
+    question: "Is it smarter to lock in a rate now?",
+    answer:
+      "For most people between 50 and 75 who are considering final expense insurance, the financial math favors acting sooner rather than later. Every year you wait, you will pay a higher monthly premium for the same coverage — and you will have fewer years to benefit from the lower rate you locked in earlier. That said, the smartest move is to get an accurate estimate first, then speak with a licensed agent to review your specific health profile and state-approved options. Use the calculator on any state page to see your personalized estimate, and click 'Get the Approved Rate' to connect with a local expert at no cost.",
   },
 ];
 
@@ -117,6 +128,12 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* ADSENSE_UNIT_2_START - Below FAQ section */}
+      <div className="max-w-2xl mx-auto px-4">
+        <AdsensePlaceholder label="Homepage Ad — Below FAQ Section" />
+      </div>
+      {/* ADSENSE_UNIT_2_END */}
 
       {/* Mission Note */}
       <section className="max-w-3xl mx-auto px-4 pb-12 border-t border-gray-200 pt-10">
