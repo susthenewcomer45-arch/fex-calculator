@@ -38,8 +38,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${geist.className} bg-gray-50 text-gray-900 antialiased`}>
         <header className="bg-blue-900 text-white py-4 px-6 shadow-md">
           <div className="max-w-5xl mx-auto flex items-center justify-between">
-            <a href="/" className="text-xl font-bold tracking-tight">
-              NocallQuoteNow<span className="text-blue-300">.com</span>
+            <a href="/" className="text-xl font-bold tracking-tight text-white">
+              nocallquotenow.com
             </a>
             <nav className="hidden sm:flex gap-6 text-sm font-medium text-blue-200">
               <a href="/" className="hover:text-white transition-colors">Home</a>

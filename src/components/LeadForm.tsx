@@ -91,8 +91,8 @@ export default function LeadForm({ defaultState = '' }: LeadFormProps) {
         <div className="text-4xl mb-3">✅</div>
         <p className="text-green-800 font-bold text-xl mb-2">You&apos;re all set!</p>
         <p className="text-green-700 text-sm max-w-md mx-auto">
-          A licensed{form.homeState ? ` ${form.homeState}` : ''} agent will reach out to you
-          shortly with your exact approval rate. No robocalls — one agent, one call.
+          A licensed{form.homeState ? ` ${form.homeState}` : ' local'} insurance expert will
+          reach out to you shortly to provide your exact rate and coverage options.
         </p>
       </div>
     )
@@ -107,7 +107,8 @@ export default function LeadForm({ defaultState = '' }: LeadFormProps) {
     <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 my-8">
       <h2 className="text-xl font-bold text-blue-900 mb-1">Get Your Exact Approval Rate →</h2>
       <p className="text-gray-500 text-sm mb-6">
-        A licensed agent will reach out with your exact rate. No robocalls — one agent, one call.
+        A licensed local insurance expert will reach out to you shortly to provide your exact rate
+        and answer any questions you have.
       </p>
 
       <form onSubmit={handleSubmit} noValidate className="space-y-4">
