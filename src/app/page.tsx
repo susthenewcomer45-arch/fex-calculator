@@ -54,6 +54,21 @@ const faqs = [
     answer:
       "For most people between 50 and 75 who are considering final expense insurance, the financial math favors acting sooner rather than later. Every year you wait, you will pay a higher monthly premium for the same coverage — and you will have fewer years to benefit from the lower rate you locked in earlier. That said, the smartest move is to get an accurate estimate first, then speak with a licensed agent to review your specific health profile and state-approved options. Use the calculator on any state page to see your personalized estimate, and click 'Get the Approved Rate' to connect with a local expert at no cost.",
   },
+  {
+    question: "Will I get spam calls if I use this calculator?",
+    answer:
+      "No. We never collect your phone number and never sell your information to anyone. Our calculator requires only non-identifying inputs — your age, gender, health status, and desired coverage amount — to generate an estimate. No account, no sign-up, and no contact information is required to use the tool.",
+  },
+  {
+    question: "Is my information sold to lead buyers or agents?",
+    answer:
+      "Never. Your data stays private. nocallquotenow.com does not operate a lead generation business. We do not sell, rent, or share your information with insurance carriers, agents, or third-party lead buyers. If you choose to connect with a licensed agent through our site, that is a voluntary step you initiate — we do not pass your data to anyone automatically.",
+  },
+  {
+    question: "How is nocallquotenow.com different from other quote sites?",
+    answer:
+      "Most insurance quote sites are lead capture forms in disguise. They appear to offer free comparisons, but their real business is collecting your phone number and selling it to multiple agents who then call, text, and email you repeatedly. nocallquotenow.com gives you a real, data-driven premium estimate with no personal information required. No phone number, no email, no Social Security number — just an honest number based on your state, age, gender, and health profile.",
+  },
 ];
 
 export default function HomePage() {

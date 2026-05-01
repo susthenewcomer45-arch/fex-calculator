@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { blogPosts } from "@/lib/blog-posts";
 
 export const metadata: Metadata = {
   title: "Final Expense Insurance Blog — Tips, Guides & Resources",
@@ -91,6 +92,15 @@ const articles = [
   },
 ];
 
+const liveArticles = blogPosts.map((p) => ({
+  slug: p.slug,
+  title: p.title,
+  excerpt: p.description,
+  date: p.date,
+  readTime: p.readTime,
+  live: true,
+}));
+
 export default function BlogPage() {
   return (
     <>
@@ -104,13 +114,46 @@ export default function BlogPage() {
         </p>
       </section>
 
+      {/* Live articles */}
+      <div className="grid gap-6 sm:grid-cols-2 mb-10">
+        {liveArticles.map((article) => (
+          <article
+            key={article.slug}
+            className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
+              <time dateTime={article.date}>
+                {new Date(article.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </time>
+              <span>·</span>
+              <span>{article.readTime}</span>
+            </div>
+            <h2 className="text-lg font-bold text-blue-900 mb-2 leading-snug">
+              {article.title}
+            </h2>
+            <p className="text-gray-600 text-sm leading-relaxed mb-4">{article.excerpt}</p>
+            <Link
+              href={`/blog/${article.slug}`}
+              className="inline-block text-sm font-semibold text-white bg-[#0d9488] hover:bg-teal-700 rounded-full px-4 py-1.5 transition-colors"
+            >
+              Read Article →
+            </Link>
+          </article>
+        ))}
+      </div>
+
+      {/* Upcoming articles */}
+      <h2 className="text-xl font-bold text-blue-900 mb-4">More Articles Coming Soon</h2>
       <div className="grid gap-6 sm:grid-cols-2">
         {articles.map((article) => (
           <article
             key={article.slug}
             className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
           >
-            {/* Article stub — replace href with /blog/[slug] when full articles are written */}
             <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
               <time dateTime={article.date}>
                 {new Date(article.date).toLocaleDateString("en-US", {

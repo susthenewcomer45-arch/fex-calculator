@@ -274,6 +274,11 @@ export default function Calculator({ stateName }: CalculatorProps) {
         >
           Get the Approved Rate →
         </button>
+        <p className="text-center text-xs text-gray-400 mt-2 leading-relaxed px-2">
+          By clicking above, you&apos;ll be connected with a licensed insurance agent in your state
+          who may follow up by phone, email, or text. This is optional and free. We never sell your
+          information to third parties.
+        </p>
       </div>
 
       {/* Lead capture modal */}

@@ -123,18 +123,23 @@ export default async function StatePage({ params }: Props) {
               — not a generic national average. With an average funeral in {state.name} running{" "}
               <strong>${state.averageFuneralCost.toLocaleString()}</strong>, the premiums shown
               reflect actual rate trends for {state.name} residents based on age, gender, and health
-              profile. Think of it as a data-backed starting point. If the number looks right for
-              your budget, the green <strong>Get the Approved Rate</strong> button connects you with
-              a licensed {state.name} insurance expert who can confirm your exact, carrier-approved
-              monthly premium — no commitment, no pressure.
+              profile. Because final expense insurance is age-rated — meaning the older you are when
+              you apply, the higher your monthly premium — the estimate you see today represents the
+              best rate currently available to you for this coverage amount. Think of it as a
+              data-backed starting point. If the number looks right for your budget, the green{" "}
+              <strong>Get the Approved Rate</strong> button connects you with a licensed{" "}
+              {state.name} insurance expert who can confirm your exact, carrier-approved monthly
+              premium — no commitment, no pressure.
             </p>
             <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
-              One thing worth understanding: final expense insurance is priced by age at the time
-              you apply. The older you are when you lock in a policy, the higher your monthly
-              premium — and that rate is then fixed for life. With funeral costs in {state.name}{" "}
-              rising steadily with inflation, applying sooner rather than later typically locks in a
-              meaningfully lower rate over the long term. The good news is that{" "}
-              {state.name} policies require no medical exam and accept applicants aged 50–85,
+              Two facts are worth keeping in mind as you consider your options. First, final expense
+              premiums increase with age — every year you wait, the same coverage costs more, and
+              that higher rate is then locked in for life. A policy secured at 65 will carry
+              meaningfully lower premiums than the same policy applied for at 70 or 75. Second,
+              funeral costs in {state.name} — like most states — rise with inflation each year.
+              Waiting does not reduce your need for coverage; it typically increases both the
+              coverage amount you will need and the monthly premium you will pay. The good news is
+              that {state.name} policies require no medical exam and accept applicants aged 50–85,
               including those with pre-existing conditions like diabetes, COPD, or heart disease —
               so there is no health-related reason to wait.
             </p>
