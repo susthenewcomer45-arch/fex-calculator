@@ -1,6 +1,9 @@
 import { MetadataRoute } from "next";
 import { states } from "@/lib/states";
 import { blogPosts } from "@/lib/blog-posts";
+import generatedPostsRaw from "@/lib/generated-posts.json";
+
+const generatedPosts = generatedPostsRaw as { slug: string; date: string }[];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://nocallquotenow.com";
@@ -13,6 +16,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const blogPostUrls = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const generatedPostUrls = generatedPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: "monthly" as const,
@@ -32,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    ...generatedPostUrls,
     ...blogPostUrls,
     ...stateUrls,
   ];

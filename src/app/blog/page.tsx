@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/lib/blog-posts";
+import generatedPostsRaw from "@/lib/generated-posts.json";
+
+interface GeneratedPost {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+  readTime: string;
+}
+const generatedPosts = generatedPostsRaw as GeneratedPost[];
 
 export const metadata: Metadata = {
   title: "Final Expense Insurance Blog — Tips, Guides & Resources",
@@ -92,14 +102,24 @@ const articles = [
   },
 ];
 
-const liveArticles = blogPosts.map((p) => ({
+const manualLive = blogPosts.map((p) => ({
   slug: p.slug,
   title: p.title,
   excerpt: p.description,
   date: p.date,
   readTime: p.readTime,
-  live: true,
 }));
+
+const autoLive = generatedPosts.map((p) => ({
+  slug: p.slug,
+  title: p.title,
+  excerpt: p.description,
+  date: p.date,
+  readTime: p.readTime,
+}));
+
+// Most-recent first; generated posts go on top since they are newer
+const liveArticles = [...autoLive, ...manualLive];
 
 export default function BlogPage() {
   return (

@@ -42,3 +42,8 @@ next-env.d.ts
 .next
 node_modules
 dist
+
+# Google service account key files — never commit these
+aiaura-810e8-06dbbed3d67a.json
+*-service-account*.json
+*-firebase-adminsdk-*.json
