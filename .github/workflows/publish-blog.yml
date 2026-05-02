@@ -1,0 +1,41 @@
+name: Publish Blog Post
+
+on:
+  schedule:
+    # Mon–Fri at 9 AM UTC
+    - cron: '0 9 * * 1-5'
+  workflow_dispatch: # Allow manual trigger from the Actions tab
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # Needed to push the new blog post file
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Use GITHUB_TOKEN so the push at the end of the script triggers
+          # Vercel's GitHub integration and redeploys the site.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run publish script
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          # Paste the full contents of aiaura-810e8-06dbbed3d67a.json here
+          # as a GitHub Actions secret named GOOGLE_SERVICE_ACCOUNT_JSON
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: node scripts/publish-blog.js
