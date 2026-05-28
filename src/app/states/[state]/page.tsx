@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Calculator from "@/components/Calculator";
@@ -6,6 +7,18 @@ import AdsensePlaceholder from "@/components/AdsensePlaceholder";
 import { AccordionItem } from "@/components/Accordion";
 import { states } from "@/lib/states";
 import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema";
+
+// States whose hero image is .jpg — all others are .png
+const JPG_STATES = new Set([
+  "south-dakota", "tennessee", "texas", "utah",
+  "vermont", "virginia", "washington", "west-virginia",
+  "wisconsin", "wyoming",
+]);
+
+function stateImageSrc(slug: string): string {
+  const ext = JPG_STATES.has(slug) ? "jpg" : "png";
+  return `/images/states/${slug}.${ext}`;
+}
 
 export async function generateStaticParams() {
   return states.map((state) => ({ state: state.slug }));
@@ -95,6 +108,31 @@ export default async function StatePage({ params }: Props) {
           </span>
         </div>
       </section>
+
+      {/* State hero image */}
+      <div className="max-w-5xl mx-auto px-4 mt-6">
+        <div className="relative rounded-2xl overflow-hidden" style={{ height: "280px" }}>
+          <Image
+            src={stateImageSrc(state.slug)}
+            alt={`${state.name} — Final Expense Insurance`}
+            fill
+            sizes="(max-width: 1280px) 100vw, 1280px"
+            className="object-cover object-center"
+            priority
+          />
+          {/* Bottom-up gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent" />
+          {/* Text over gradient */}
+          <div className="absolute bottom-0 left-0 right-0 px-7 pb-6">
+            <p className="text-white font-bold text-2xl leading-tight drop-shadow-md">
+              Final Expense Insurance in {state.name}
+            </p>
+            <p className="text-white/80 text-sm mt-1 drop-shadow">
+              Serving families across {state.name} with no-pressure quotes
+            </p>
+          </div>
+        </div>
+      </div>
 
       {/* Main content */}
       <div className="max-w-5xl mx-auto px-4">
