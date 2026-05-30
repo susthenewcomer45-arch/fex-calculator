@@ -22,7 +22,8 @@ export default function StateGrid({ states }: StateGridProps) {
         <Link
           key={state.slug}
           href={`/states/${state.slug}`}
-          className="bg-white rounded-2xl shadow-sm p-4 flex flex-col gap-1 hover:shadow-md hover:border-teal-400 border border-transparent transition-all"
+          className="bg-white rounded-2xl shadow-md p-4 flex flex-col gap-1 border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+          style={{ borderLeftColor: '#0d9488', borderLeftWidth: '3px' }}
         >
           <span className="text-2xl font-bold text-[#1a2744] leading-none">{state.abbr}</span>
           <span className="text-[0.875rem] text-[#64748b]">{state.name}</span>

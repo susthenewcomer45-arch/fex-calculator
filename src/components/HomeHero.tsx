@@ -22,9 +22,15 @@ export default function HomeHero({ states }: HomeHeroProps) {
 
   return (
     <>
-      {/* Navy hero */}
-      <section className="bg-[#1a2744] py-16 px-4">
-        <div className="max-w-5xl mx-auto text-center">
+      {/* Navy hero — subtle dot-grid texture + bottom gradient fade */}
+      <section
+        className="bg-[#1a2744] py-16 px-4 relative overflow-hidden"
+        style={{
+          backgroundImage: 'radial-gradient(rgba(255,255,255,0.045) 1px, transparent 1px)',
+          backgroundSize: '28px 28px',
+        }}
+      >
+        <div className="max-w-5xl mx-auto text-center relative z-10">
           <h1 className="font-bold text-white leading-tight mb-4" style={{ fontSize: '3rem' }}>
             Get a final expense quote in your state,
             <br />
@@ -66,16 +72,23 @@ export default function HomeHero({ states }: HomeHeroProps) {
             />
           </div>
         </div>
+        {/* Gradient fade into the vision section below */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-[#0f172a] pointer-events-none" />
       </section>
 
-      {/* Vision statement */}
-      <section className="bg-[#0f172a] py-12 px-4">
+      {/* Vision statement — radial glow for depth */}
+      <section
+        className="py-16 px-4"
+        style={{
+          background: 'radial-gradient(ellipse at 60% 40%, #1a3a5c 0%, #0f172a 70%)',
+        }}
+      >
         <div className="max-w-3xl mx-auto">
-          <p className="text-[#14b8a6] text-xs font-semibold uppercase tracking-widest mb-5 text-center">
+          <p className="text-[#14b8a6] text-xs font-semibold uppercase tracking-widest mb-6 text-center">
             Our Vision
           </p>
           <div className="border-l-4 border-[#14b8a6] pl-7">
-            <p className="text-white font-bold leading-snug mb-4" style={{ fontSize: '1.6rem' }}>
+            <p className="text-white font-bold leading-snug mb-4" style={{ fontSize: '1.9rem' }}>
               When thousands of families in the same community absorb{' '}
               <span className="text-[#14b8a6]">$10,000–$20,000</span>
               {' '}in unexpected funeral costs in the same generation, the economic ripple is real.
@@ -89,22 +102,24 @@ export default function HomeHero({ states }: HomeHeroProps) {
       </section>
 
       {/* Why Get a Quote Without a Phone Call? — above state grid */}
-      <section className="max-w-2xl mx-auto px-4 pt-10 pb-2">
-        <div className="bg-white rounded-2xl shadow-sm p-6">
-          <h2 className="text-xl font-bold text-[#1a2744] mb-3">Why Get a Quote Without a Phone Call?</h2>
-          <p className="text-[#1e293b] leading-relaxed text-sm">
-            Traditional insurance shopping means filling out a form and immediately getting
-            bombarded with calls from agents and lead buyers. At nocallquotenow.com, we believe you
-            deserve to explore your options in peace — without your phone ringing off the hook for
-            weeks afterward. Our free estimator gives you a real, data-driven premium estimate based
-            on your state, gender, health status, and desired coverage amount — without requiring
-            your phone number, Social Security number, or any personal information.
-          </p>
-          <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
-            No data is sold to third-party lead buyers. No agents will call you unless you
-            explicitly request a consultation. You get the information you need to make an informed
-            decision, on your timeline, with zero sales pressure.
-          </p>
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8">
+            <h2 className="text-2xl font-extrabold text-[#1a2744] mb-4">Why Get a Quote Without a Phone Call?</h2>
+            <p className="text-[#1e293b] leading-relaxed text-sm">
+              Traditional insurance shopping means filling out a form and immediately getting
+              bombarded with calls from agents and lead buyers. At nocallquotenow.com, we believe you
+              deserve to explore your options in peace — without your phone ringing off the hook for
+              weeks afterward. Our free estimator gives you a real, data-driven premium estimate based
+              on your state, gender, health status, and desired coverage amount — without requiring
+              your phone number, Social Security number, or any personal information.
+            </p>
+            <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
+              No data is sold to third-party lead buyers. No agents will call you unless you
+              explicitly request a consultation. You get the information you need to make an informed
+              decision, on your timeline, with zero sales pressure.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -115,7 +130,7 @@ export default function HomeHero({ states }: HomeHeroProps) {
       {/* ADSENSE_UNIT_1_END */}
 
       {/* State grid section */}
-      <section className="bg-[#f1f5f9] py-12 px-4">
+      <section className="bg-[#f1f5f9] py-20 px-4">
         <div className="max-w-5xl mx-auto">
           <p className="text-[#0d9488] text-xs font-semibold uppercase tracking-widest mb-5">
             50 States — Click to Open Calculator

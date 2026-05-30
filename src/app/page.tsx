@@ -93,49 +93,55 @@ export default function HomePage() {
       {/* Hero + State Grid (client — handles search filtering) */}
       <HomeHero states={states} />
 
-      {/* SEO Content */}
-      <section className="max-w-2xl mx-auto px-4 py-12">
-        <div className="bg-white rounded-2xl shadow-sm p-6">
-          <h2 className="text-xl font-bold text-[#1a2744] mb-3">What is Final Expense Insurance?</h2>
-          <p className="text-[#1e293b] leading-relaxed text-sm">
-            Final expense insurance — sometimes called burial insurance or funeral insurance — is a
-            type of whole life insurance policy with a smaller death benefit, typically ranging from
-            $2,000 to $35,000. It is specifically designed to cover the costs that arise at the end
-            of a person&apos;s life: funeral services, burial or cremation, outstanding medical
-            bills, and other debts that loved ones might otherwise be forced to pay out of pocket.
-          </p>
-          <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
-            Unlike traditional life insurance, final expense policies are issued with little to no
-            medical underwriting. Most applicants qualify based on a short series of health
-            questions, and guaranteed-issue options are available for those with serious
-            pre-existing conditions. Coverage is permanent — premiums never increase, the policy
-            never expires, and the death benefit is paid to your beneficiary tax-free, usually
-            within days of a claim being filed.
-          </p>
+      {/* SEO Content — light gray bg for contrast after the state grid */}
+      <section className="bg-[#f8f9fa] py-16 px-4">
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8">
+            <h2 className="text-2xl font-extrabold text-[#1a2744] mb-4">What is Final Expense Insurance?</h2>
+            <p className="text-[#1e293b] leading-relaxed text-sm">
+              Final expense insurance — sometimes called burial insurance or funeral insurance — is a
+              type of whole life insurance policy with a smaller death benefit, typically ranging from
+              $2,000 to $35,000. It is specifically designed to cover the costs that arise at the end
+              of a person&apos;s life: funeral services, burial or cremation, outstanding medical
+              bills, and other debts that loved ones might otherwise be forced to pay out of pocket.
+            </p>
+            <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
+              Unlike traditional life insurance, final expense policies are issued with little to no
+              medical underwriting. Most applicants qualify based on a short series of health
+              questions, and guaranteed-issue options are available for those with serious
+              pre-existing conditions. Coverage is permanent — premiums never increase, the policy
+              never expires, and the death benefit is paid to your beneficiary tax-free, usually
+              within days of a claim being filed.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* FAQs */}
-      <section className="max-w-2xl mx-auto px-4 pb-12">
-        <h2 className="text-2xl font-bold text-[#1a2744] mb-5">Frequently Asked Questions</h2>
-        <div className="space-y-3">
-          {faqs.map((faq) => (
-            <AccordionItem key={faq.question} title={faq.question}>
-              <p>{faq.answer}</p>
-            </AccordionItem>
-          ))}
+      {/* FAQs — pure white bg alternates with the gray above */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl font-extrabold text-[#1a2744] mb-8">Frequently Asked Questions</h2>
+          <div className="space-y-3">
+            {faqs.map((faq) => (
+              <AccordionItem key={faq.question} title={faq.question}>
+                <p>{faq.answer}</p>
+              </AccordionItem>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ADSENSE_UNIT_2_START - Below FAQ section */}
-      <div className="max-w-2xl mx-auto px-4">
-        <AdsensePlaceholder label="Homepage Ad — Below FAQ Section" />
+      <div className="bg-[#f8f9fa] py-4 px-4">
+        <div className="max-w-2xl mx-auto">
+          <AdsensePlaceholder label="Homepage Ad — Below FAQ Section" />
+        </div>
       </div>
       {/* ADSENSE_UNIT_2_END */}
 
       {/* Mission Note */}
-      <section className="max-w-3xl mx-auto px-4 pb-12 border-t border-gray-200 pt-10">
-        <p className="text-sm text-[#64748b] text-center leading-relaxed italic">
+      <section className="bg-white px-4 py-14 border-t border-gray-100">
+        <p className="text-sm text-[#64748b] text-center leading-relaxed italic max-w-3xl mx-auto">
           nocallquotenow.com is a free resource because we believe financial literacy is the
           backbone of a resilient economy. By providing transparent, state-accurate data, we empower
           families to protect future generations from financial setbacks.
