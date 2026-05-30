@@ -94,7 +94,7 @@ export default function HomePage() {
       <HomeHero states={states} />
 
       {/* SEO Content */}
-      <section className="max-w-2xl mx-auto px-4 py-12 space-y-6">
+      <section className="max-w-2xl mx-auto px-4 py-12">
         <div className="bg-white rounded-2xl shadow-sm p-6">
           <h2 className="text-xl font-bold text-[#1a2744] mb-3">What is Final Expense Insurance?</h2>
           <p className="text-[#1e293b] leading-relaxed text-sm">
@@ -111,23 +111,6 @@ export default function HomePage() {
             pre-existing conditions. Coverage is permanent — premiums never increase, the policy
             never expires, and the death benefit is paid to your beneficiary tax-free, usually
             within days of a claim being filed.
-          </p>
-        </div>
-
-        <div className="bg-white rounded-2xl shadow-sm p-6">
-          <h2 className="text-xl font-bold text-[#1a2744] mb-3">Why Get a Quote Without a Phone Call?</h2>
-          <p className="text-[#1e293b] leading-relaxed text-sm">
-            Traditional insurance shopping means filling out a form and immediately getting
-            bombarded with calls from agents and lead buyers. At nocallquotenow.com, we believe you
-            deserve to explore your options in peace — without your phone ringing off the hook for
-            weeks afterward. Our free estimator gives you a real, data-driven premium estimate based
-            on your state, gender, health status, and desired coverage amount — without requiring
-            your phone number, Social Security number, or any personal information.
-          </p>
-          <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
-            No data is sold to third-party lead buyers. No agents will call you unless you
-            explicitly request a consultation. You get the information you need to make an informed
-            decision, on your timeline, with zero sales pressure.
           </p>
         </div>
       </section>

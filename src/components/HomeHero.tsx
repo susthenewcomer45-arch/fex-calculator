@@ -26,13 +26,12 @@ export default function HomeHero({ states }: HomeHeroProps) {
       <section className="bg-[#1a2744] py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="font-bold text-white leading-tight mb-4" style={{ fontSize: '3rem' }}>
-            Final Expense Insurance
+            Get Your Number.
             <br />
-            <span className="text-[#14b8a6]">by State</span>
+            <span className="text-[#14b8a6]">Nobody Will Call You.</span>
           </h1>
           <p className="text-white/70 max-w-lg mx-auto mb-8 leading-relaxed">
-            Select your state for localized premium estimates. Instant results — no sign-up, no
-            personal info required.
+            Instant final expense estimates by state — no sign-up, no agents, no pressure.
           </p>
 
           {/* Stat pills */}
@@ -66,6 +65,39 @@ export default function HomeHero({ states }: HomeHeroProps) {
               aria-label="Search states"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Brand statement */}
+      <section className="bg-[#0f172a] py-10 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-white/90 leading-relaxed text-lg">
+            When thousands of families in the same community absorb{' '}
+            <span className="text-[#14b8a6] font-semibold">$10,000–$20,000</span>
+            {' '}in unexpected funeral costs in the same generation, the economic ripple is real.{' '}
+            <span className="text-[#14b8a6] font-semibold">nocallquotenow.com</span>
+            {' '}exists because awareness is the first step nobody is taking.
+          </p>
+        </div>
+      </section>
+
+      {/* Why Get a Quote Without a Phone Call? — above state grid */}
+      <section className="max-w-2xl mx-auto px-4 pt-10 pb-2">
+        <div className="bg-white rounded-2xl shadow-sm p-6">
+          <h2 className="text-xl font-bold text-[#1a2744] mb-3">Why Get a Quote Without a Phone Call?</h2>
+          <p className="text-[#1e293b] leading-relaxed text-sm">
+            Traditional insurance shopping means filling out a form and immediately getting
+            bombarded with calls from agents and lead buyers. At nocallquotenow.com, we believe you
+            deserve to explore your options in peace — without your phone ringing off the hook for
+            weeks afterward. Our free estimator gives you a real, data-driven premium estimate based
+            on your state, gender, health status, and desired coverage amount — without requiring
+            your phone number, Social Security number, or any personal information.
+          </p>
+          <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
+            No data is sold to third-party lead buyers. No agents will call you unless you
+            explicitly request a consultation. You get the information you need to make an informed
+            decision, on your timeline, with zero sales pressure.
+          </p>
         </div>
       </section>
 
