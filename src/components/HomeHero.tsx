@@ -26,12 +26,12 @@ export default function HomeHero({ states }: HomeHeroProps) {
       <section className="bg-[#1a2744] py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="font-bold text-white leading-tight mb-4" style={{ fontSize: '3rem' }}>
-            Get Your Number.
+            Get a final expense quote in your state,
             <br />
-            <span className="text-[#14b8a6]">Nobody Will Call You.</span>
+            <span className="text-[#14b8a6]">with no strings attached.</span>
           </h1>
           <p className="text-white/70 max-w-lg mx-auto mb-8 leading-relaxed">
-            Instant final expense estimates by state — no sign-up, no agents, no pressure.
+            nocallquotenow.com is not paid by any insurance carriers or agencies.
           </p>
 
           {/* Stat pills */}
@@ -68,16 +68,23 @@ export default function HomeHero({ states }: HomeHeroProps) {
         </div>
       </section>
 
-      {/* Brand statement */}
-      <section className="bg-[#0f172a] py-10 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-white/90 leading-relaxed text-lg">
-            When thousands of families in the same community absorb{' '}
-            <span className="text-[#14b8a6] font-semibold">$10,000–$20,000</span>
-            {' '}in unexpected funeral costs in the same generation, the economic ripple is real.{' '}
-            <span className="text-[#14b8a6] font-semibold">nocallquotenow.com</span>
-            {' '}exists because awareness is the first step nobody is taking.
+      {/* Vision statement */}
+      <section className="bg-[#0f172a] py-12 px-4">
+        <div className="max-w-3xl mx-auto">
+          <p className="text-[#14b8a6] text-xs font-semibold uppercase tracking-widest mb-5 text-center">
+            Our Vision
           </p>
+          <div className="border-l-4 border-[#14b8a6] pl-7">
+            <p className="text-white font-bold leading-snug mb-4" style={{ fontSize: '1.6rem' }}>
+              When thousands of families in the same community absorb{' '}
+              <span className="text-[#14b8a6]">$10,000–$20,000</span>
+              {' '}in unexpected funeral costs in the same generation, the economic ripple is real.
+            </p>
+            <p className="text-white/70 leading-relaxed text-base">
+              <span className="text-[#14b8a6] font-semibold">nocallquotenow.com</span>
+              {' '}exists because awareness is the first step nobody is taking.
+            </p>
+          </div>
         </div>
       </section>
 
