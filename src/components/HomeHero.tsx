@@ -124,9 +124,11 @@ export default function HomeHero({ states }: HomeHeroProps) {
       </section>
 
       {/* ADSENSE_UNIT_1_START - Above state grid */}
-      <div className="max-w-5xl mx-auto px-4">
-        <AdsensePlaceholder label="Homepage Ad — Above State Grid" />
-      </div>
+      {process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_ADSENSE_ENABLED === 'true' && (
+        <div className="max-w-5xl mx-auto px-4">
+          <AdsensePlaceholder label="Homepage Ad — Above State Grid" />
+        </div>
+      )}
       {/* ADSENSE_UNIT_1_END */}
 
       {/* State grid section */}

@@ -132,11 +132,13 @@ export default function HomePage() {
       </section>
 
       {/* ADSENSE_UNIT_2_START - Below FAQ section */}
-      <div className="bg-[#f8f9fa] py-4 px-4">
-        <div className="max-w-2xl mx-auto">
-          <AdsensePlaceholder label="Homepage Ad — Below FAQ Section" />
+      {process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_ADSENSE_ENABLED === 'true' && (
+        <div className="bg-[#f8f9fa] py-4 px-4">
+          <div className="max-w-2xl mx-auto">
+            <AdsensePlaceholder label="Homepage Ad — Below FAQ Section" />
+          </div>
         </div>
-      </div>
+      )}
       {/* ADSENSE_UNIT_2_END */}
 
       {/* Mission Note */}
