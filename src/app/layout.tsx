@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Script from "next/script";
+import Link from "next/link";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { generateLocalBusinessSchema } from "@/lib/schema";
@@ -53,6 +54,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             NocallQuoteNow.com provides illustrative final expense insurance estimates for educational purposes only.
             Quotes are not binding and actual premiums vary by carrier, age, health, and state regulations.
             Always review policy details before purchasing. © {new Date().getFullYear()} NocallQuoteNow.
+          </p>
+          <p className="mt-3 flex items-center justify-center gap-2 opacity-70">
+            <Link href="/privacy-policy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
+            <span>·</span>
+            <Link href="/about" className="hover:opacity-100 transition-opacity">About</Link>
+            <span>·</span>
+            <Link href="/contact" className="hover:opacity-100 transition-opacity">Contact</Link>
           </p>
         </footer>
       </body>
