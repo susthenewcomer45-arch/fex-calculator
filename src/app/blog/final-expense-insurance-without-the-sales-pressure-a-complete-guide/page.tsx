@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-05 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Final Expense Insurance Without the Sales Pressure: A Complete Guide | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="final-expense-insurance-without-the-sales-pressure-a-complete-guide" />
       </article>
     </>
   )

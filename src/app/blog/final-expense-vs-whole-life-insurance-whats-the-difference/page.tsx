@@ -1,6 +1,7 @@
 // Auto-generated 2026-06-01 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Final Expense vs Whole Life Insurance: What\'s the Difference? | NocallQuoteNow',
@@ -138,6 +139,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="final-expense-vs-whole-life-insurance-whats-the-difference" />
       </article>
     </>
   )

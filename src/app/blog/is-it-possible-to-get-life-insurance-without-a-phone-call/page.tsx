@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-12 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Is It Possible to Get Life Insurance Without a Phone Call? | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="is-it-possible-to-get-life-insurance-without-a-phone-call" />
       </article>
     </>
   )

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { blogPosts } from '@/lib/blog-posts'
 import { generateWebPageSchema } from '@/lib/schema'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }))
@@ -113,6 +114,8 @@ export default async function BlogPostPage({ params }: Props) {
             View State Estimates →
           </Link>
         </div>
+
+        <RelatedArticles currentSlug={post.slug} />
 
         <div className="mt-8 flex gap-4 text-sm">
           <Link href="/blog" className="text-[#0d9488] hover:underline font-medium">

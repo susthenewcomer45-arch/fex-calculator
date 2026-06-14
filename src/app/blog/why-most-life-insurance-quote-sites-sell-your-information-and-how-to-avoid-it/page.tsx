@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-02 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Why Most Life Insurance Quote Sites Sell Your Information (And How to Avoid It) | NocallQuoteNow',
@@ -138,6 +139,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="why-most-life-insurance-quote-sites-sell-your-information-and-how-to-avoid-it" />
       </article>
     </>
   )

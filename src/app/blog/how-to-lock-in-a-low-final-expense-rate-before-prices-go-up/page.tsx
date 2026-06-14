@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-27 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'How to Lock In a Low Final Expense Rate Before Prices Go Up | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="how-to-lock-in-a-low-final-expense-rate-before-prices-go-up" />
       </article>
     </>
   )

@@ -1,6 +1,7 @@
 // Auto-generated 2026-06-02 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'What Does Final Expense Insurance Actually Cover? | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="what-does-final-expense-insurance-actually-cover" />
       </article>
     </>
   )

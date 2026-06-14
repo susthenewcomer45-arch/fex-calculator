@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-18 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'The Average Cost of a Funeral in Every US State (2026 Update) | NocallQuoteNow',
@@ -142,6 +143,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="the-average-cost-of-a-funeral-in-every-us-state-2026-update" />
       </article>
     </>
   )

@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-19 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'How Age Affects Your Final Expense Insurance Premium | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="how-age-affects-your-final-expense-insurance-premium" />
       </article>
     </>
   )

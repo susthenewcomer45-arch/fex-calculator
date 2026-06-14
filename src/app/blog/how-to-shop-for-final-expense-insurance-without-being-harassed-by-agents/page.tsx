@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-06 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'How to Shop for Final Expense Insurance Without Being Harassed by Agents | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="how-to-shop-for-final-expense-insurance-without-being-harassed-by-agents" />
       </article>
     </>
   )

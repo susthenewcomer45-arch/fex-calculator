@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-22 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'How Inflation Is Making Burial Costs More Expensive Every Year | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="how-inflation-is-making-burial-costs-more-expensive-every-year" />
       </article>
     </>
   )

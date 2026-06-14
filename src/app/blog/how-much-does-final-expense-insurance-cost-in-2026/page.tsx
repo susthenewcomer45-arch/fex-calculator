@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-14 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'How Much Does Final Expense Insurance Cost in 2026? | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="how-much-does-final-expense-insurance-cost-in-2026" />
       </article>
     </>
   )

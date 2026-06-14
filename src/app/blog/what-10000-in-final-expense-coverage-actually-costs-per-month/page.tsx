@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-28 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'What $10,000 in Final Expense Coverage Actually Costs Per Month | NocallQuoteNow',
@@ -140,6 +141,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="what-10000-in-final-expense-coverage-actually-costs-per-month" />
       </article>
     </>
   )

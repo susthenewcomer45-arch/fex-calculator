@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-20 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Why Waiting to Get Final Expense Insurance Will Cost You More | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="why-waiting-to-get-final-expense-insurance-will-cost-you-more" />
       </article>
     </>
   )

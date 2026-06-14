@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-11 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'How to Compare Final Expense Insurance Rates Without Talking to Anyone | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="how-to-compare-final-expense-insurance-rates-without-talking-to-anyone" />
       </article>
     </>
   )

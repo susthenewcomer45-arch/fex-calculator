@@ -1,6 +1,7 @@
 // Auto-generated 2026-06-03 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Is Final Expense Insurance Worth It? An Honest Breakdown | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="is-final-expense-insurance-worth-it-an-honest-breakdown" />
       </article>
     </>
   )

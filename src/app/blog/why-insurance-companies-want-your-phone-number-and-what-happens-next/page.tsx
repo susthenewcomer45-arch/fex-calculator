@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-08 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Why Insurance Companies Want Your Phone Number (And What Happens Next) | NocallQuoteNow',
@@ -140,6 +141,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="why-insurance-companies-want-your-phone-number-and-what-happens-next" />
       </article>
     </>
   )

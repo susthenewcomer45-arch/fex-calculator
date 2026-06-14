@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-07 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'The Truth About "Free" Life Insurance Quotes Online | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="the-truth-about-free-life-insurance-quotes-online" />
       </article>
     </>
   )

@@ -1,6 +1,7 @@
 // Auto-generated 2026-06-04 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'The Difference Between Burial Insurance and Life Insurance | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="the-difference-between-burial-insurance-and-life-insurance" />
       </article>
     </>
   )

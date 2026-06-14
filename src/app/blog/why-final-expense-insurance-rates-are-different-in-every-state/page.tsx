@@ -1,6 +1,7 @@
 // Auto-generated 2026-05-15 — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Why Final Expense Insurance Rates Are Different in Every State | NocallQuoteNow',
@@ -137,6 +138,8 @@ export default function BlogPost() {
             Home
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="why-final-expense-insurance-rates-are-different-in-every-state" />
       </article>
     </>
   )

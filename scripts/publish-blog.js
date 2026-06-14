@@ -162,6 +162,7 @@ function generateTSX(slug, title, date, post) {
   return `// Auto-generated ${date} — do not edit manually
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: '${t} | NocallQuoteNow',
@@ -247,6 +248,8 @@ export default function BlogPost() {
             View State Estimates →
           </Link>
         </div>
+
+        <RelatedArticles currentSlug="${slug}" />
 
         <div className="mt-8 flex gap-4 text-sm">
           <Link href="/blog" className="text-[#0d9488] hover:underline font-medium">
