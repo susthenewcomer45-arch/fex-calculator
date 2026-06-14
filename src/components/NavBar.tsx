@@ -15,14 +15,22 @@ export default function NavBar() {
           Final <span className="text-[#14b8a6]">Expense</span> Calc
         </span>
       </Link>
-      {isStatePage && (
+      <div className="flex items-center gap-5">
         <Link
-          href="/"
+          href="/blog"
           className="text-white text-sm hover:text-[#14b8a6] transition-colors"
         >
-          ← All States
+          Blog
         </Link>
-      )}
+        {isStatePage && (
+          <Link
+            href="/"
+            className="text-white text-sm hover:text-[#14b8a6] transition-colors"
+          >
+            ← All States
+          </Link>
+        )}
+      </div>
     </nav>
   )
 }
