@@ -47,3 +47,10 @@ dist
 aiaura-810e8-06dbbed3d67a.json
 *-service-account*.json
 *-firebase-adminsdk-*.json
+
+# Logo/favicon source files
+favicon_io.zip
+favicon_extracted/
+lighthouse.logo
+nocallquotenow.logo.
+A_metaphorical_logo_for__nocallquotenow.com_._202606181948-removebg-preview.png

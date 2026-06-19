@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function NavBar() {
   const pathname = usePathname()
@@ -10,7 +11,7 @@ export default function NavBar() {
   return (
     <nav className="w-full bg-[#1a2744] px-6 flex items-center justify-between" style={{ height: 56 }}>
       <Link href="/" className="flex items-center gap-2 text-white font-bold text-base">
-        <span>🛡️</span>
+        <Image src="/images/logo.png" alt="NocallQuoteNow logo" width={36} height={36} priority />
         <span>
           Final <span className="text-[#14b8a6]">Expense</span> Calc
         </span>
