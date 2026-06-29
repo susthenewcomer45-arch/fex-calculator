@@ -38,6 +38,21 @@ export function generateBreadcrumbSchema(items: { name: string; url: string }[])
   }
 }
 
+export function generateWebSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NocallQuoteNow",
+    "url": "https://nocallquotenow.com",
+    "description": "Free final expense insurance premium estimates for seniors age 50-85. No phone number required.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://nocallquotenow.com/states/{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+}
+
 export function generateWebPageSchema(title: string, description: string, url: string) {
   return {
     "@context": "https://schema.org",

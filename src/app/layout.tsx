@@ -4,7 +4,7 @@ import Script from "next/script";
 import Link from "next/link";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
-import { generateLocalBusinessSchema } from "@/lib/schema";
+import { generateLocalBusinessSchema, generateWebSiteSchema } from "@/lib/schema";
 
 const geist = Geist({ subsets: ["latin"] });
 
@@ -27,14 +27,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const schema = generateLocalBusinessSchema();
+  const localBusinessSchema = generateLocalBusinessSchema();
+  const webSiteSchema = generateWebSiteSchema();
 
   return (
     <html lang="en">
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
         />
       </head>
       <body className={`${geist.className} antialiased`} style={{ background: "#f1f5f9", color: "#1e293b" }}>

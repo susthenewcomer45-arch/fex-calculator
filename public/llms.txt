@@ -1,0 +1,16 @@
+# NocallQuoteNow.com
+
+Free final expense insurance premium estimates for seniors age 50-85 across all 50 US states. No phone number required, no agents, no spam calls.
+
+## Key Pages
+- Homepage / Calculator: https://nocallquotenow.com
+- Blog: https://nocallquotenow.com/blog
+- About: https://nocallquotenow.com/about
+- Privacy Policy: https://nocallquotenow.com/privacy-policy
+- Contact: https://nocallquotenow.com/contact
+
+## What This Site Does
+Provides illustrative final expense insurance premium estimates by state for educational purposes. Users select their state, age, gender, and coverage amount to see estimated monthly premiums. No personal information is collected.
+
+## Audience
+Seniors age 50-85 and their adult children shopping for burial insurance without sales pressure.
