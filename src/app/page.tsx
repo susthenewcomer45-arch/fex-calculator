@@ -117,6 +117,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Why We Built This */}
+      <section className="bg-white py-16 px-4 border-t border-gray-100">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl font-extrabold text-[#1a2744] mb-8">Why We Built This</h2>
+          <p className="text-[#1e293b] leading-relaxed text-sm mb-4">
+            We built NocallQuoteNow because the traditional final expense shopping experience is
+            broken for most seniors. You look for burial insurance quotes, answer a few questions,
+            and your phone starts ringing nonstop with calls from agents and lead companies. Many
+            people in their 50s–80s (and the family members helping them) simply want
+            straightforward numbers to plan ahead — without pressure, without giving up personal
+            information, and without becoming a sales target.
+          </p>
+          <p className="text-[#1e293b] leading-relaxed text-sm mb-4">
+            This free calculator is designed specifically for that group. Select your state, enter
+            basic details like age, gender, and desired coverage amount ($5,000–$35,000 range), and
+            you get an instant, data-driven premium estimate. We use state-specific rate tables and
+            standard factors — no phone number, no email, no Social Security number, and no data is
+            ever sold or shared. The goal is simple: give you realistic numbers based on real market
+            data so you can make informed decisions on your own timeline.
+          </p>
+          <p className="text-[#1e293b] leading-relaxed text-sm">
+            We&apos;re not here to replace agents when you need personalized advice. We&apos;re here
+            to fix the first step that&apos;s missing — honest estimates with zero spam and zero
+            sales pressure. No tracking. No runaround. Just a clean tool built to cut through the
+            noise and help families protect what matters.
+          </p>
+        </div>
+      </section>
+
       {/* FAQs — pure white bg alternates with the gray above */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-2xl mx-auto">
