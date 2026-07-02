@@ -3,7 +3,7 @@ import HomeHero from "@/components/HomeHero";
 import AdsensePlaceholder from "@/components/AdsensePlaceholder";
 import { AccordionItem } from "@/components/Accordion";
 import { states } from "@/lib/states";
-import { generateFAQSchema, generateWebPageSchema } from "@/lib/schema";
+import { generateFAQSchema, generateWebPageSchema, generateWebApplicationSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Free Final Expense Insurance Estimates — No Phone Calls | NocallQuoteNow",
@@ -78,6 +78,7 @@ export default function HomePage() {
     "Get the most accurate burial insurance estimate online. No robocalls, no medical exams, zero obligation.",
     "https://nocallquotenow.com"
   );
+  const webApplicationSchema = generateWebApplicationSchema();
 
   return (
     <>
@@ -88,6 +89,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationSchema) }}
       />
 
       {/* Hero + State Grid (client — handles search filtering) */}

@@ -53,6 +53,30 @@ export function generateWebSiteSchema() {
   }
 }
 
+export function generateWebApplicationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "NocallQuoteNow Final Expense Calculator",
+    "url": "https://nocallquotenow.com",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web Browser",
+    "description": "Free final expense and burial insurance calculator for seniors age 50-85. Get instant, state-specific premium estimates with no sign-up, no phone number, no email, and no personal information required.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "State-specific premium estimates",
+      "Instant calculations based on age, gender, and coverage amount",
+      "No personal information required",
+      "No sign-up or account needed",
+      "Coverage range $5,000 to $35,000"
+    ]
+  }
+}
+
 export function generateWebPageSchema(title: string, description: string, url: string) {
   return {
     "@context": "https://schema.org",
