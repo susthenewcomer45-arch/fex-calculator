@@ -7,6 +7,7 @@ import AdsensePlaceholder from "@/components/AdsensePlaceholder";
 import { AccordionItem } from "@/components/Accordion";
 import { states } from "@/lib/states";
 import { generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { getRatePerThousand } from "@/lib/rates";
 
 // States whose hero image is .jpg — all others are .png
 const JPG_STATES = new Set([
@@ -50,10 +51,17 @@ export default async function StatePage({ params }: Props) {
   const state = states.find((s) => s.slug === slug);
   if (!state) notFound();
 
+  const nationalAverageFuneralCost =
+    states.reduce((sum, s) => sum + s.averageFuneralCost, 0) / states.length;
+  const costRatio = state.averageFuneralCost / nationalAverageFuneralCost;
+  const baseRate = getRatePerThousand("female", "standard", 65);
+  const lowMonthlyEstimate = Math.round(baseRate * 0.8 * 10 * costRatio);
+  const highMonthlyEstimate = Math.round(baseRate * 1.3 * 10 * costRatio);
+
   const faqs = [
     {
       question: `How much does final expense insurance cost in ${state.name}?`,
-      answer: `Final expense insurance premiums in ${state.name} vary based on your age, gender, and health status. A healthy 65-year-old woman in ${state.name} can typically expect to pay between $28 and $55 per month for $10,000 in coverage. Men and older applicants pay slightly higher rates. Use our free calculator above for a personalized estimate based on ${state.name} market data.`,
+      answer: `Final expense insurance premiums in ${state.name} vary based on your age, gender, and health status. A healthy 65-year-old woman in ${state.name} can typically expect to pay between $${lowMonthlyEstimate} and $${highMonthlyEstimate} per month for $10,000 in coverage. Men and older applicants pay slightly higher rates. Use our free calculator above for a personalized estimate based on ${state.name} market data.`,
     },
     {
       question: `Is a medical exam required for final expense insurance in ${state.name}?`,
