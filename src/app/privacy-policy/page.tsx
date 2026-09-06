@@ -28,9 +28,23 @@ const sections = [
     heading: "Google AdSense and Cookies",
     body: [
       "NocallQuoteNow participates in Google AdSense (publisher ID: ca-pub-4437016471828719). Google AdSense may serve advertisements on this site and uses cookies and similar technologies to display ads based on your prior visits to this and other websites.",
-      "Google's use of advertising cookies enables it and its partners to serve ads based on your visit to our site and other sites on the internet. You may opt out of personalized advertising by visiting Google's Ads Settings at adssettings.google.com.",
+      <>
+        Google&apos;s use of advertising cookies enables it and its partners to serve ads based on
+        your visit to our site and other sites on the internet. You may opt out of personalized
+        advertising by visiting Google&apos;s Ads Settings at{" "}
+        <a
+          href="https://www.google.com/settings/ads"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#0d9488] hover:underline font-medium"
+        >
+          google.com/settings/ads
+        </a>
+        .
+      </>,
       "We also use Google Analytics, which sets cookies to help us understand traffic patterns and visitor behavior in aggregate. No personally identifying information is transmitted to Google Analytics.",
       "You can control or disable cookies through your browser settings. Disabling cookies may affect some site functionality.",
+      "For visitors in the EEA, UK, and Switzerland: we use cookies and similar technologies for ad personalization under Google's EU User Consent Policy and applicable GDPR and ePrivacy rules. Where required, consent is obtained before personalized ads are shown, and you may withdraw consent at any time through your cookie settings or by visiting Google's Ads Settings.",
     ],
   },
   {
