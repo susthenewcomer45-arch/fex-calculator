@@ -172,10 +172,10 @@ export default async function StatePage({ params }: Props) {
               profile. Because final expense insurance is age-rated — meaning the older you are when
               you apply, the higher your monthly premium — the estimate you see today represents the
               best rate currently available to you for this coverage amount. Think of it as a
-              data-backed starting point. If the number looks right for your budget, the green{" "}
-              <strong>Get the Approved Rate</strong> button connects you with a licensed{" "}
-              {state.name} insurance expert who can confirm your exact, carrier-approved monthly
-              premium — no commitment, no pressure.
+              data-backed starting point. If the number looks right for your budget and you&apos;d like a licensed{" "}
+              {state.name} insurance expert to confirm your exact, carrier-approved monthly premium,
+              click the <strong>Get My Exact Quote</strong> button and submit your info. We&apos;ll
+              only connect you if you ask — otherwise, nobody calls. No commitment, no pressure.
             </p>
             <p className="text-[#1e293b] leading-relaxed text-sm mt-3">
               Two facts are worth keeping in mind as you consider your options. First, final expense
@@ -185,7 +185,7 @@ export default async function StatePage({ params }: Props) {
               funeral costs in {state.name} — like most states — rise with inflation each year.
               Waiting does not reduce your need for coverage; it typically increases both the
               coverage amount you will need and the monthly premium you will pay. The good news is
-              that {state.name} policies require no medical exam and accept applicants aged 50–85,
+              that {state.name} policies require no medical exam and accept applicants aged 40–85,
               including those with pre-existing conditions like diabetes, COPD, or heart disease —
               so there is no health-related reason to wait.
             </p>

@@ -254,8 +254,9 @@ export default function Calculator({ stateName }: CalculatorProps) {
           <div className="border-t border-gray-100 pt-6 mt-2">
             <p className="font-bold text-[#1a2744] text-sm mb-1">Get My Exact Quote</p>
             <p className="text-xs text-gray-400 mb-4 leading-relaxed">
-              Optional — get your exact approved rate. We&apos;ll only use this to follow up about
-              final expense coverage, never sold to third parties.
+              Optional — if you&apos;d like a licensed agent to confirm your exact rate, submit your info
+              below. We&apos;ll only connect you if you ask — otherwise, nobody calls. Never sold to
+              third parties.
             </p>
             {quoteSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-xl p-4 text-center text-sm text-green-800 font-medium">

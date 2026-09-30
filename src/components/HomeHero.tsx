@@ -44,7 +44,7 @@ export default function HomeHero({ states }: HomeHeroProps) {
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {[
               { bold: '50', small: 'States Covered' },
-              { bold: '$5K–$35K', small: 'Coverage Range' },
+              { bold: '$2K–$35K', small: 'Coverage Range' },
               { bold: 'Free', small: 'No Sign-Up' },
             ].map(({ bold, small }) => (
               <div

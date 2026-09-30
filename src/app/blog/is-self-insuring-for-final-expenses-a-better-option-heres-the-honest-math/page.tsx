@@ -35,6 +35,14 @@ const sections: Section[] = [
     ]
   },
   {
+    "heading": "A Worked Example",
+    "paragraphs": [
+      "Take a woman age 65 in standard health who wants $10,000 of coverage. Using the same rate table behind our calculator (about $5.00 per $1,000 of coverage), that comes to roughly $50 per month, or $600 per year. Whole life premiums are fixed once the policy is issued, so that amount does not rise as she ages.",
+      "If she instead saves $50 per month on her own, she would have about $6,000 after 10 years, $9,000 after 15 years, and reach $10,000 after roughly 200 months (about 16 years and 8 months, or age 81 to 82). This ignores any interest earned. Even with interest, she would be short of $10,000 for many years, while the insurance policy pays the full $10,000 from day one, apart from any waiting period on the policy.",
+      "The flip side: if she lives well past 82, her own savings would have grown past $10,000 and she would still own that money, whereas premiums paid to an insurer are gone. Insurance wins if you may not live long enough to finish saving; self-insuring wins if you are likely to live a long time and can stay disciplined. These are illustrative numbers, not a quote, since actual rates vary by carrier, health, and gender."
+    ]
+  },
+  {
     "heading": "When Insurance Still Wins",
     "paragraphs": [
       "For people in their 70s and 80s or those with health conditions, self-insuring becomes much harder. The time needed to save enough may not exist. Insurance guarantees the funds are available immediately upon passing, regardless of market conditions or personal savings progress.",

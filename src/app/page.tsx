@@ -136,7 +136,7 @@ export default function HomePage() {
           <p className="text-[#1e293b] leading-relaxed text-sm mb-4">
             This free calculator is designed specifically for that group. Select your state, enter
             basic details like age, gender, and desired coverage amount ($2,000–$35,000 range), and
-            you get an instant, data-driven premium estimate. We use state-specific rate tables and
+            you get an instant premium estimate. We use state-specific rate tables and
             standard factors — no phone number, no email, no Social Security number, and no data is
             ever sold or shared. The goal is simple: give you realistic numbers based on real market
             data so you can make informed decisions on your own timeline.

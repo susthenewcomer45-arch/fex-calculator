@@ -4,13 +4,13 @@ import Link from 'next/link'
 import RelatedArticles from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
-  title: 'How Much Does a Funeral Cost in 2024? State-by-State Breakdown | NocallQuoteNow',
-  description: 'Learn 2024 funeral costs by state and how final expense insurance can protect your family. No personal data required.',
-  alternates: { canonical: 'https://nocallquotenow.com/blog/how-much-does-a-funeral-cost-in-2024-statebystate-breakdown' },
+  title: 'How Much Does a Funeral Cost in 2026? State-by-State Breakdown | NocallQuoteNow',
+  description: 'Learn 2026 funeral costs by state and how final expense insurance can protect your family. No personal data required.',
+  alternates: { canonical: 'https://nocallquotenow.com/blog/how-much-does-a-funeral-cost-in-2026-state-by-state-breakdown' },
   openGraph: {
-    title: 'How Much Does a Funeral Cost in 2024? State-by-State Breakdown | NocallQuoteNow',
-    description: 'Learn 2024 funeral costs by state and how final expense insurance can protect your family. No personal data required.',
-    url: 'https://nocallquotenow.com/blog/how-much-does-a-funeral-cost-in-2024-statebystate-breakdown',
+    title: 'How Much Does a Funeral Cost in 2026? State-by-State Breakdown | NocallQuoteNow',
+    description: 'Learn 2026 funeral costs by state and how final expense insurance can protect your family. No personal data required.',
+    url: 'https://nocallquotenow.com/blog/how-much-does-a-funeral-cost-in-2026-state-by-state-breakdown',
   },
 }
 
@@ -28,7 +28,7 @@ const sections: Section[] = [
     ]
   },
   {
-    "heading": "Understanding Funeral Costs in 2024",
+    "heading": "Understanding Funeral Costs in 2026",
     "paragraphs": [
       "Funeral expenses include far more than you might think. The casket alone can run $1,000 to $5,000 depending on materials and style. Embalming typically costs $500 to $750, while a burial plot ranges from $500 to $3,000 depending on location and cemetery type. Then there's the service itself—flowers, music, venue rental, and a reception can easily add $2,000 to $4,000 to your tab.",
       "Cremation is generally less expensive than traditional burial, ranging from $1,200 to $3,500, but it's not always the budget-friendly option families assume. Memorial services, urns, and scattered ashes ceremonies can still accumulate significant costs. Beyond the direct funeral home charges, families often face cemetery maintenance fees, death certificates, obituary notices, and legal costs that can total another $1,000 to $2,000."
@@ -84,7 +84,7 @@ export default function BlogPost() {
             <Link href="/blog" className="hover:text-[#14b8a6] transition-colors">Blog</Link>
           </nav>
           <h1 className="font-bold text-white leading-tight mb-4 text-3xl">
-            How Much Does a Funeral Cost in 2024? State-by-State Breakdown
+            How Much Does a Funeral Cost in 2026? State-by-State Breakdown
           </h1>
           <div className="flex items-center gap-3 text-sm text-white/50">
             <time dateTime={postDate}>{formattedDate}</time>
@@ -130,7 +130,7 @@ export default function BlogPost() {
           </Link>
         </div>
 
-        <RelatedArticles currentSlug="how-much-does-a-funeral-cost-in-2024-statebystate-breakdown" />
+        <RelatedArticles currentSlug="how-much-does-a-funeral-cost-in-2026-state-by-state-breakdown" />
 
         <div className="mt-8 flex gap-4 text-sm">
           <Link href="/blog" className="text-[#0d9488] hover:underline font-medium">
