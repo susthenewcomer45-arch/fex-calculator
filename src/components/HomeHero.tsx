@@ -90,7 +90,7 @@ export default function HomeHero({ states }: HomeHeroProps) {
           <div className="border-l-4 border-[#14b8a6] pl-7">
             <p className="text-white font-bold leading-snug mb-4" style={{ fontSize: '1.9rem' }}>
               When thousands of families in the same community absorb{' '}
-              <span className="text-[#14b8a6]">$10,000–$20,000</span>
+              <span className="text-[#14b8a6]">$8,000–$12,000</span>
               {' '}in unexpected funeral costs in the same generation, the economic ripple is real.
             </p>
             <p className="text-white/70 leading-relaxed text-base">
@@ -110,7 +110,7 @@ export default function HomeHero({ states }: HomeHeroProps) {
               Traditional insurance shopping means filling out a form and immediately getting
               bombarded with calls from agents and lead buyers. At nocallquotenow.com, we believe you
               deserve to explore your options in peace — without your phone ringing off the hook for
-              weeks afterward. Our free estimator gives you a real, data-driven premium estimate based
+              weeks afterward. Our free estimator gives you an estimated premium based
               on your state, gender, health status, and desired coverage amount — without requiring
               your phone number, Social Security number, or any personal information.
             </p>

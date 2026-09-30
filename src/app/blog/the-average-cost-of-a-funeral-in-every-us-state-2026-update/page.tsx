@@ -38,7 +38,7 @@ const sections: Section[] = [
   {
     "heading": "Regional Cost Variations Across States",
     "paragraphs": [
-      "Funeral expenses cluster into regional patterns. The Northeast and West Coast generally experience the highest costs, with traditional funerals in New York, Massachusetts, and California often exceeding $12,000. The Midwest and South typically offer more moderate pricing, ranging from $7,000 to $10,000. Rural areas across all regions tend to be less expensive than urban centers due to lower overhead costs.",
+      "Funeral expenses cluster into regional patterns. The Northeast and West Coast generally experience the highest costs, with traditional funerals in New York, Massachusetts, and California often reaching $10,000 or more (California averages about $10,400). The Midwest and South typically offer more moderate pricing, ranging from $7,000 to $10,000. Rural areas across all regions tend to be less expensive than urban centers due to lower overhead costs.",
       "Alaska and Hawaii stand apart as the most expensive states for funerals, primarily due to geographic isolation increasing transportation and operational costs. States like Mississippi, Arkansas, and Oklahoma remain among the most affordable. However, even within states, significant variation exists between metropolitan areas and smaller communities.",
       "Your specific location matters when calculating final expense insurance needs. Someone in Manhattan will need different coverage than someone in rural Montana. The good news is that final expense insurance policies are customizable, allowing you to select coverage amounts that match your state's actual costs rather than overpaying for coverage you don't need."
     ]

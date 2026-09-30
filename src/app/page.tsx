@@ -67,7 +67,7 @@ const faqs = [
   {
     question: "How is nocallquotenow.com different from other quote sites?",
     answer:
-      "Most insurance quote sites are lead capture forms in disguise. They appear to offer free comparisons, but their real business is collecting your phone number and selling it to multiple agents who then call, text, and email you repeatedly. nocallquotenow.com gives you a real, data-driven premium estimate with no personal information required. No phone number, no email, no Social Security number — just an honest number based on your state, age, gender, and health profile.",
+      "Most insurance quote sites are lead capture forms in disguise. They appear to offer free comparisons, but their real business is collecting your phone number and selling it to multiple agents who then call, text, and email you repeatedly. nocallquotenow.com gives you an estimated premium with no personal information required. No phone number, no email, no Social Security number — just an honest number based on your state, age, gender, and health profile.",
   },
 ];
 
@@ -114,8 +114,7 @@ export default function HomePage() {
               Unlike traditional life insurance, final expense policies are issued with little to no
               medical underwriting. Most applicants qualify based on a short series of health
               questions, and guaranteed-issue options are available for those with serious
-              pre-existing conditions. Coverage is permanent — premiums never increase, the policy
-              never expires, and the death benefit is paid to your beneficiary tax-free, usually
+              pre-existing conditions. Many final expense policies are whole life, meaning premiums are fixed and coverage doesn&apos;t expire. Some term policies do expire — always check your specific policy terms. The death benefit is paid to your beneficiary tax-free, usually
               within days of a claim being filed.
             </p>
           </div>
@@ -136,7 +135,7 @@ export default function HomePage() {
           </p>
           <p className="text-[#1e293b] leading-relaxed text-sm mb-4">
             This free calculator is designed specifically for that group. Select your state, enter
-            basic details like age, gender, and desired coverage amount ($5,000–$35,000 range), and
+            basic details like age, gender, and desired coverage amount ($2,000–$35,000 range), and
             you get an instant, data-driven premium estimate. We use state-specific rate tables and
             standard factors — no phone number, no email, no Social Security number, and no data is
             ever sold or shared. The goal is simple: give you realistic numbers based on real market
@@ -145,7 +144,7 @@ export default function HomePage() {
           <p className="text-[#1e293b] leading-relaxed text-sm">
             We&apos;re not here to replace agents when you need personalized advice. We&apos;re here
             to fix the first step that&apos;s missing — honest estimates with zero spam and zero
-            sales pressure. No tracking. No runaround. Just a clean tool built to cut through the
+            sales pressure. No runaround. Just a clean tool built to cut through the
             noise and help families protect what matters.
           </p>
         </div>
@@ -179,7 +178,7 @@ export default function HomePage() {
       <section className="bg-white px-4 py-14 border-t border-gray-100">
         <p className="text-sm text-[#64748b] text-center leading-relaxed italic max-w-3xl mx-auto">
           nocallquotenow.com is a free resource because we believe financial literacy is the
-          backbone of a resilient economy. By providing transparent, state-accurate data, we empower
+          backbone of a resilient economy. By providing transparent, estimated state-level data, we empower
           families to protect future generations from financial setbacks.
         </p>
       </section>

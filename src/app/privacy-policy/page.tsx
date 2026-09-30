@@ -42,7 +42,6 @@ const sections = [
         </a>
         .
       </>,
-      "We also use Google Analytics, which sets cookies to help us understand traffic patterns and visitor behavior in aggregate. No personally identifying information is transmitted to Google Analytics.",
       "You can control or disable cookies through your browser settings. Disabling cookies may affect some site functionality.",
       "For visitors in the EEA, UK, and Switzerland: we use cookies and similar technologies for ad personalization under Google's EU User Consent Policy and applicable GDPR and ePrivacy rules. Where required, consent is obtained before personalized ads are shown, and you may withdraw consent at any time through your cookie settings or by visiting Google's Ads Settings.",
     ],

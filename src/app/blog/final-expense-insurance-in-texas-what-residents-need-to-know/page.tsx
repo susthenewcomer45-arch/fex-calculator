@@ -31,7 +31,7 @@ const sections: Section[] = [
     "heading": "What Is Final Expense Insurance?",
     "paragraphs": [
       "Final expense insurance is a simplified whole life insurance policy with a death benefit typically ranging from $5,000 to $25,000. Unlike term life insurance, which expires after a set number of years, final expense insurance remains active for your entire life, as long as you continue paying premiums. This permanence is crucial because it guarantees your burial costs will be covered no matter when you pass away.",
-      "The application process for final expense insurance is straightforward and designed with seniors in mind. Most policies don't require a medical exam, which makes them accessible to people with pre-existing health conditions. Instead, insurers ask health-related questions on the application, and approval is typically quick. This accessibility has made final expense insurance increasingly popular among Texas seniors who want to protect their families from unexpected funeral bills that can easily exceed $10,000."
+      "The application process for final expense insurance is straightforward and designed with seniors in mind. Most policies don't require a medical exam, which makes them accessible to people with pre-existing health conditions. Instead, insurers ask health-related questions on the application, and approval is typically quick. This accessibility has made final expense insurance increasingly popular among Texas seniors who want to protect their families from unexpected funeral bills that can approach or exceed $10,000."
     ]
   },
   {
@@ -44,7 +44,7 @@ const sections: Section[] = [
   {
     "heading": "Why Texas Families Are Choosing Final Expense Insurance",
     "paragraphs": [
-      "Funeral and burial costs have risen dramatically over the past decade. The average funeral in Texas now costs between $8,000 and $15,000 when you include the casket, viewing, burial plot, and headstone. Without proper planning, adult children often find themselves scrambling to pay these bills while grieving the loss of a parent. Final expense insurance eliminates this financial burden by providing a death benefit that's paid directly to your beneficiary or your funeral provider.",
+      "Funeral and burial costs have risen dramatically over the past decade. The average funeral in Texas now averages about $9,200, and can run higher when you include the casket, viewing, burial plot, and headstone. Without proper planning, adult children often find themselves scrambling to pay these bills while grieving the loss of a parent. Final expense insurance eliminates this financial burden by providing a death benefit that's paid directly to your beneficiary or your funeral provider.",
       "Beyond the financial aspect, final expense insurance offers emotional relief. Knowing that your family won't struggle with funeral costs means you can focus on what matters most: spending quality time with loved ones and saying goodbye on your own terms. Many Texas families find that this simple planning step brings unexpected peace of mind and strengthens family relationships by removing a source of potential financial stress."
     ]
   },
