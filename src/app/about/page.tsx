@@ -37,7 +37,7 @@ export default function AboutPage() {
           </p>
           <p className="text-[#1e293b] text-sm leading-relaxed">
             You pick your state, enter your age, gender, health status, and desired coverage amount,
-            and you get a real, data-driven monthly premium estimate in seconds. Nothing is sold to
+            and you get an estimated monthly premium in seconds. Nothing is sold to
             you. Nobody will call you. The number is yours to keep.
           </p>
         </div>

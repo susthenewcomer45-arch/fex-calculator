@@ -13,7 +13,7 @@ const sections = [
     heading: "What Information We Collect",
     body: [
       "NocallQuoteNow does not require you to create an account or provide any personal information to use our free premium estimator tool. The calculator collects only non-identifying inputs — your age range, gender, health status, and desired coverage amount — to produce an illustrative estimate. These inputs are not stored, logged, or associated with any individual.",
-      "If you voluntarily choose to connect with a licensed insurance agent by clicking \"Get the Approved Rate,\" you will be asked to provide your name, email address, and phone number. That information is transmitted directly to a licensed agent and is used solely to fulfill your request for an official quote.",
+      "If you voluntarily choose to connect with a licensed insurance agent by clicking \"Get My Exact Quote,\" you will be asked to provide your name, email address, and phone number. That information is transmitted directly to a licensed agent and is used solely to fulfill your request for an official quote.",
       "Like most websites, our servers automatically receive standard technical data when you visit, including your IP address, browser type, referring URL, and pages viewed. This data is used in aggregate for site analytics and is not sold or linked to your identity.",
     ],
   },
