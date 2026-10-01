@@ -65,6 +65,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <span>·</span>
             <Link href="/about" className="hover:opacity-100 transition-opacity">About</Link>
             <span>·</span>
+            <Link href="/authors" className="hover:opacity-100 transition-opacity">Authors</Link>
+            <span>·</span>
             <Link href="/contact" className="hover:opacity-100 transition-opacity">Contact</Link>
           </p>
         </footer>

@@ -132,7 +132,12 @@ export default function BlogPost() {
 
         <RelatedArticles currentSlug="final-expense-insurance-for-rural-americans-whats-different" />
 
-        <div className="mt-8 flex gap-4 text-sm">
+        <p className="mt-8 text-xs text-[#94a3b8]">
+          Written by Jesus Gonzalez, founder of NocallQuoteNow.{' '}
+          <Link href="/authors" className="underline hover:text-[#0d9488]">About the author</Link>
+        </p>
+
+        <div className="mt-6 flex gap-4 text-sm">
           <Link href="/blog" className="text-[#0d9488] hover:underline font-medium">
             ← Back to Blog
           </Link>
