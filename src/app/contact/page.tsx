@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact — NocallQuoteNow",
@@ -26,9 +27,14 @@ export default function ContactPage() {
 
       {/* Body */}
       <div className="max-w-2xl mx-auto px-4 py-12">
+        <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 mb-8">
+          <h2 className="text-xl font-extrabold text-[#1a2744] mb-4">Send Us a Message</h2>
+          <ContactForm />
+        </div>
+
         <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-4">
           <p className="text-[#1e293b] text-sm leading-relaxed">
-            For questions, feedback, or anything else, email us at{" "}
+            You can also reach us by email. For questions, feedback, or anything else, email us at{" "}
             <a
               href="mailto:hello@nocallquotenow.com"
               className="text-[#0d9488] font-semibold hover:underline"

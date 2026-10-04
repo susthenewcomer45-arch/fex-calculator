@@ -32,7 +32,7 @@ async function getSheetsClient() {
   return google.sheets({ version: 'v4', auth })
 }
 
-export async function appendLeadRow(tab: 'Quotes' | 'Tips', values: string[]) {
+export async function appendLeadRow(tab: 'Quotes' | 'Tips' | 'Contact', values: string[]) {
   const sheets = await getSheetsClient()
   await sheets.spreadsheets.values.append({
     spreadsheetId: LEADS_SHEET_ID,

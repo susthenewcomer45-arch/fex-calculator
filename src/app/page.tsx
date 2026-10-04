@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "Is it smarter to lock in a rate now?",
     answer:
-      "For most people between 50 and 75 who are considering final expense insurance, the financial math favors acting sooner rather than later. Every year you wait, you will pay a higher monthly premium for the same coverage — and you will have fewer years to benefit from the lower rate you locked in earlier. That said, the smartest move is to get an accurate estimate first, then speak with a licensed agent to review your specific health profile and state-approved options. Use the calculator on any state page to see your personalized estimate, and click 'Get the Approved Rate' to connect with a local expert at no cost.",
+      "For most people between 50 and 75 who are considering final expense insurance, the financial math favors acting sooner rather than later. Every year you wait, you will pay a higher monthly premium for the same coverage — and you will have fewer years to benefit from the lower rate you locked in earlier. That said, the smartest move is to get an accurate estimate first, then speak with a licensed agent to review your specific health profile and state-approved options. Use the calculator on any state page to see your personalized estimate, and click 'Get My Exact Quote' to connect with a local expert at no cost.",
   },
   {
     question: "Will I get spam calls if I use this calculator?",

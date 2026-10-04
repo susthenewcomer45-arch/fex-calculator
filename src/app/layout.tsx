@@ -63,6 +63,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <p className="mt-3 flex items-center justify-center gap-2 opacity-70">
             <Link href="/privacy-policy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
             <span>·</span>
+            <Link href="/terms" className="hover:opacity-100 transition-opacity">Terms</Link>
+            <span>·</span>
+            <Link href="/disclaimer" className="hover:opacity-100 transition-opacity">Disclaimer</Link>
+            <span>·</span>
             <Link href="/about" className="hover:opacity-100 transition-opacity">About</Link>
             <span>·</span>
             <Link href="/authors" className="hover:opacity-100 transition-opacity">Authors</Link>

@@ -45,19 +45,54 @@ export default function AboutPage() {
         <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-5">
           <h2 className="text-2xl font-extrabold text-[#1a2744]">Why We Built It</h2>
           <p className="text-[#1e293b] text-sm leading-relaxed">
-            NocallQuoteNow was built by a licensed final expense insurance agent who got tired of
-            watching people get harassed just for wanting a number.
+            NocallQuoteNow was built by Jesus Gonzalez after more than 20 years in customer service
+            and sales. Over that time he has trained sales teams, developed his own sales
+            methodology, and become licensed in life and annuities. You can read more on the{" "}
+            <Link href="/authors" className="text-[#0d9488] font-semibold hover:underline">
+              author page
+            </Link>
+            .
+          </p>
+          {/* TODO (Jesus): add any extra personal background you want shared here — for example
+              how you got started, what you've learned from working with families, or why this
+              work matters to you. Only add facts you are comfortable publishing. */}
+          <p className="text-[#1e293b] text-sm leading-relaxed">
+            The reason this site exists is simple. Most insurance sales rely on high-pressure
+            tactics, and those tactics push away people who are not ready to buy right now. Many of
+            those people never look into life insurance again after a bad experience, which leaves
+            them and their families without a plan. NocallQuoteNow is a different starting point:
+            anyone in the country can get a premium range without giving up their contact
+            information first.
+          </p>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-5">
+          <h2 className="text-2xl font-extrabold text-[#1a2744]">What the Calculator Does</h2>
+          <p className="text-[#1e293b] text-sm leading-relaxed">
+            The calculator takes a handful of inputs — your state, age, gender, health status, and
+            the amount of coverage you want — and shows an estimated monthly premium on the spot.
+            There is no form to fill out first and no phone number to hand over. The number is yours
+            to keep, whether you do anything with it or not.
           </p>
           <p className="text-[#1e293b] text-sm leading-relaxed">
-            The insurance industry runs on lead generation. Most quote sites are not quote sites —
-            they are lead capture forms that sell your phone number to four or five agents at once,
-            triggering a flood of calls that can last for weeks. The people most affected are seniors
-            on fixed incomes who just wanted to understand their options in peace.
+            It is built for adults between 40 and 85, and for the family members who are helping
+            them plan ahead. Whether you are thinking about final expenses for yourself or trying to
+            understand what a parent might pay, the goal is the same: give you a realistic sense of
+            the range so you can decide what to do next on your own timeline.
+          </p>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 space-y-5">
+          <h2 className="text-2xl font-extrabold text-[#1a2744]">What to Expect</h2>
+          <p className="text-[#1e293b] text-sm leading-relaxed">
+            Please keep in mind that every estimate on this site is illustrative. Your actual
+            premium depends on the carrier and on your individual circumstances, so treat the
+            calculator result as a starting point rather than an offer.
           </p>
           <p className="text-[#1e293b] text-sm leading-relaxed">
-            This tool exists to fix that. Final expense premiums are calculated from a small set of
-            actuarial variables. There is no reason your phone number needs to be part of the
-            equation just to see a number.
+            If you decide to move forward, you can request your exact quote. When you do, Jesus or
+            someone from his team will reach out within 8 hours with an accurate number. If you
+            never submit that request, nobody contacts you.
           </p>
         </div>
 
