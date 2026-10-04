@@ -260,7 +260,7 @@ export default function Calculator({ stateName }: CalculatorProps) {
             </p>
             {quoteSubmitted ? (
               <div className="bg-green-50 border border-green-200 rounded-xl p-4 text-center text-sm text-green-800 font-medium">
-                ✅ Thanks! We&apos;ll follow up about your exact rate shortly.
+                ✅ Thanks! We&apos;ll follow up about your exact rate shortly. Jesus or someone from his team will reach out within 8 hours.
               </div>
             ) : (
               <form onSubmit={handleQuoteSubmit} noValidate className="space-y-3">

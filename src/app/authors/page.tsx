@@ -39,7 +39,7 @@ export default function AuthorsPage() {
             Realizing those customers might never look into life insurance again after an
             experience like that, Jesus built NocallQuoteNow.com: a site where anyone in the
             country can get a real idea of their premium range, and if they decide to move
-            forward, get an accurate number directly from him.
+            forward, Jesus or someone from his team will reach out within 8 hours with an accurate number.
           </p>
         </div>
 
