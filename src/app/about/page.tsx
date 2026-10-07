@@ -102,7 +102,7 @@ export default function AboutPage() {
             {[
               "We do not collect your phone number to use the calculator.",
               "We do not sell your information to lead buyers or agents.",
-              "We do not receive commissions from carriers for directing traffic.",
+              "We are not paid by carriers to promote their products or send them traffic.",
               "We do not require sign-up, account creation, or payment of any kind.",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2">

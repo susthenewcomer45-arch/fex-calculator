@@ -30,12 +30,7 @@ const sections: { heading: string; body: string[] }[] = [
   {
     heading: "Compensation Disclosure",
     body: [
-      // TODO (Jesus): confirm the exact wording of this compensation disclosure. It must
-      // accurately describe how you are paid if a policy is purchased (for example, whether
-      // you earn commissions from carriers, and whether the site earns anything beyond
-      // advertising revenue). The sentences below are generic placeholders — review them
-      // before relying on them.
-      "If a policy is purchased after you request your exact quote, the licensed agent who sells it may be compensated as a result. This site also displays third-party advertising, which may generate advertising revenue.",
+      "NocallQuoteNow.com is not paid by any insurance carrier or agency to list, rank, or promote their products, and the calculator is free to use without providing any contact information. If you request an exact quote and later purchase a policy, the licensed agent who sells it is paid a commission by the insurance carrier, as with any insurance policy. The site also displays third-party advertising, which may generate revenue for the site.",
     ],
   },
 ];
